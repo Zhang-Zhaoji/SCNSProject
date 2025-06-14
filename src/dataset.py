@@ -11,6 +11,7 @@ class NeuralDataset:
     def __getitem__(self, idx):
         return self.data[idx], self.labels[idx]
     
+# Actually we should implement a Softmax or use other classification model in the future implementation.
 class LinearRegressionModel:
     def __init__(self, input_dim, output_dim):
         self.model = [Lasso(alpha=0.1) for _ in range(output_dim)]# [LinearRegression() for _ in range(output_dim)]
