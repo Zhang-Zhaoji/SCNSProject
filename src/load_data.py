@@ -281,7 +281,7 @@ def plot_modulation_radar_tiled(modulation, neuron_indices,
         fig.tight_layout()
         plt.show()
 
-def read_Decoding_csv(data_path='./data', region_type = 'VISal', session_letter = 'A'):
+def read_Decoding_csv(data_path='../data', region_type = 'VISal', session_letter = 'A'):
     '''
     Read Decoding csv file, return a dict containing all the data and session folder name
     '''
