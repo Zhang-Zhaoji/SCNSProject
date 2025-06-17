@@ -114,6 +114,7 @@ def process_Firing_Data(ts:np.ndarray, dff:np.ndarray,avail_times:list[tuple[int
     plt.legend()
     plt.show()
     firing_data = []
+    de_conv_data = dff
     ts_data = [ts[start:end] for start, end in avail_times]
     for avail_time in avail_times:
         start, end = avail_time
